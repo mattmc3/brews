@@ -1,12 +1,12 @@
 class StringCli < Formula
   desc "Fish shell's string utility for any shell"
   homepage "https://github.com/mattmc3/string"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_arm do
     url "https://github.com/mattmc3/string/releases/download/v#{version}/string-#{version}-osx-arm64.tar.gz"
-    sha256 "7f81079fda83b3d3494f1396417a55cf4048e94992bebcb853cca43ebc7af70c"
+    sha256 "ec4fd527838d360971af14eeb49d033bcd788faadb558e121222735d8aa7c38d"
 end
 
   keg_only <<~EOS

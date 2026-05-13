@@ -20,7 +20,7 @@ def info(msg): print(f"{YELLOW}{msg}{RESET}")
 
 def github_repo(url):
     m = re.search(r"github\.com/([^/]+/[^/\s\"#]+)", url)
-    return m.group(1).rstrip(".git") if m else None
+    return m.group(1).removesuffix(".git") if m else None
 
 def latest_tag(repo):
     with urllib.request.urlopen(f"https://api.github.com/repos/{repo}/tags") as r:
