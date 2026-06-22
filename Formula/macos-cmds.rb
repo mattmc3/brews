@@ -1,4 +1,4 @@
-class MacosUtils < Formula
+class MacosCmds < Formula
   desc "macOS utility scripts"
   homepage "https://github.com/mattmc3/macos-cmds"
   license "MIT"
