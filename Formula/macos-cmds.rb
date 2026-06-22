@@ -7,6 +7,8 @@ class MacosCmds < Formula
 
   def install
     bin.install Dir["bin/*"]
+    zsh_completion.install Dir["completions/_*"]
+    fish_completion.install Dir["completions/*.fish"]
   end
 
   test do
